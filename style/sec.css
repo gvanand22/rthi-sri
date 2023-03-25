@@ -49,3 +49,13 @@
 .poem-con ul li{
     margin: 1em;
 }
+
+.final-container{
+    height: 100vh;
+    background-image: url(/images/After__Large-1024x587.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
