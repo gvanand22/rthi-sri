@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:ital@1&family=Roboto+Slab:wght@500&display=swap');
+
+
+/* background */
+
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    background-image: url(/images/blue-heart.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+
+.pop_heart{
+    font-size: 0.62em;
+    font-weight: bolder;
+    position: fixed;
+    top: -5vh;
+    left: 0;
+    transform: translateY(0%);
+    animation: fall 2s ease-in infinite;
+    opacity: 90%;
+}
+
+@keyframes fall {
+    to{
+        transform: translateY(260vh);
+    }
+}
+/* global declaration */
+:root{
+    --ff-pri: 'Roboto Slab', serif;
+    --ff-sec: 'Playfair Display', serif;
+    --ff-ita: 'Caveat', cursive;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --clr-lt: #fff;
+    --clr-dk: #000;
+    --clr-gy: #808080;
+    --clr-bl: #4169e1;
+}
+
+/* content styling */
+.header{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--ff-ita);
+    font-size: 26px;
+    font-weight: var(--fw-bold);
+    margin: 2em;
+    padding: 0.5em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    justify-content: center;
+    padding: 0.5em;
+    padding-top: 2.5em;
+    padding-left: 1em;
+    gap: 0.5em;
+}
+.start_btn{
+    background-color: var(--clr-bl);
+    color: var(--clr-lt);
+    border-color: var(--clr-bl);
+    font-family: var(--ff-sec);
+    font-size: 26px;
+    padding: 0.25em;
+    border-radius: 5px;
+}
+.start_btn:hover{
+    color: var(--clr-bl);
+    background-color: var(--clr-lt);
+}
+h1{
+    font-family: var(--ff-sec);
+}
+p{
+    font-family: var(--ff-ita);
+}
+.foot_msg{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 900;
+    font-size: larger;
+}
+.foot_msg i{
+    color: var(--clr-bl);
+    margin-bottom: 1em;
+}
+
+/* pgone-styling*/
+.container-1 {
+    margin: 1.5em 1.5em 0.75em 1.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-1, .container-1 h2{
+    margin-top: 0.5em;
+}
+.body-1{
+    margin-top: 1em;
+    padding: 0.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    /* background-color: #4169e1; */
+    line-height: 1.5em;
+}
+
+.items-2, .items-3{
+    margin: 0.5em;
+    padding: 0.25em;
+    
+}
+.poem-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
