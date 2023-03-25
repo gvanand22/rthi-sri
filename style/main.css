@@ -55,24 +55,27 @@
 }
 
 /* content styling */
+.container h2{
+    text-align: center;
+}
 .header{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--ff-ita);
     font-size: 26px;
-    font-weight: var(--fw-bold);
-    margin: 2em;
-    padding: 0.5em;
+    font-weight: var(--fw-reg);
+    margin-top: 0.15em;
+    padding-top: 0.15em;
 }
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 95vh;
+    height: 80vh;
     justify-content: center;
     padding: 0.5em;
-    padding-top: 2.5em;
+    padding-top: 1.5em;
     padding-left: 1em;
     gap: 0.5em;
 }
